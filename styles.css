@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #9333ea;
+  /* --primary-color: rgb(128, 128, 128); */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
