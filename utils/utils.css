@@ -53,6 +53,10 @@
   color: var(--blue);
 }
 
+.dark-blue {
+  color: var(--dark-blue);
+}
+
 .green {
   color: var(--green);
 }
@@ -250,6 +254,10 @@
   align-items: flex-end;
 }
 
+.items-stretch {
+  align-items: stretch;
+}
+
 .content-center {
   justify-content: center;
 }
@@ -268,6 +276,10 @@
 
 .content-space-around {
   justify-content: space-around;
+}
+
+.content-stretch {
+  justify-content: stretch;
 }
 
 /* border */
@@ -400,4 +412,18 @@
 /* images */
 .object-fit-cover {
   object-fit: cover;
+}
+
+/* opcatity */
+.opacity-50 {
+  opacity: 0.5;
+}
+.opacity-80 {
+  opacity: 0.8;
+}
+.opacity-90 {
+  opacity: 0.9;
+}
+.opacity-100 {
+  opacity: 1;
 }

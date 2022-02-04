@@ -126,6 +126,9 @@
 }
 
 /* top margin */
+.mt-auto {
+  margin-top: auto;
+}
 .mt-1 {
   margin-top: var(--value-1);
 }
@@ -192,6 +195,9 @@
 }
 
 /* bottom margin */
+.mb-auto {
+  margin-bottom: auto;
+}
 .mb-1 {
   margin-bottom: var(--value-1);
 }
