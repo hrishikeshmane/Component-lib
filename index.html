@@ -1,68 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./fast.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
     />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Fast CSS</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Avatar -->
     <div class="flex-row flex-center">
-        <img class="avatar-xs rounded-full object-fit-cover m-1" src="./assets/avatar1.png" alt="John Doe" />
-        <img class="avatar-sm rounded-full object-fit-cover m-1" src="./assets/avatar2.png" alt="John Doe" />
-        <img class="avatar-md rounded-full object-fit-cover m-1" src="./assets/avatar3.png" alt="John Doe" />
-        <img class="avatar-lg rounded-full object-fit-cover m-1" src="./assets/avatar1.png" alt="John Doe" />
-        <img class="avatar rounded-full object-fit-cover m-1" src="./assets/avatar-broken.png" alt="John Doe" />
-        <div class="avatar-sm letter-avatar rounded-full flex-row flex-center m-1">JD</div>
+      <img
+        class="avatar-xs rounded-full object-fit-cover m-1"
+        src="./assets/avatar1.png"
+        alt="John Doe"
+      />
+      <img
+        class="avatar-sm rounded-full object-fit-cover m-1"
+        src="./assets/avatar2.png"
+        alt="John Doe"
+      />
+      <img
+        class="avatar-md rounded-full object-fit-cover m-1"
+        src="./assets/avatar3.png"
+        alt="John Doe"
+      />
+      <img
+        class="avatar-lg rounded-full object-fit-cover m-1"
+        src="./assets/avatar1.png"
+        alt="John Doe"
+      />
+      <img
+        class="avatar rounded-full object-fit-cover m-1"
+        src="./assets/avatar-broken.png"
+        alt="John Doe"
+      />
+      <div
+        class="avatar-sm letter-avatar rounded-full flex-row flex-center m-1"
+      >
+        JD
+      </div>
     </div>
 
     <!-- Alert -->
     <div class="flex-column flex-center">
-        <div class="flex-row items-center alert rounded-sm error mt-1 p-1">
-          <span class="material-icons alert-icon">warning</span>
-          <p>This is an error alert!</p>
-          <div class="flex-row items-center ml-auto">
-            <button class="alert-button rounded-sm px-1">UNDO</button>
-            <span class="material-icons flex-row items-center alert-close rounded-full pointer ml-1">close</span>
-          </div>
+      <div class="flex-row items-center alert rounded-sm error mt-1 p-1">
+        <span class="material-icons alert-icon">warning</span>
+        <p>This is an error alert!</p>
+        <div class="flex-row items-center ml-auto">
+          <button class="alert-button rounded-sm px-1">UNDO</button>
+          <span
+            class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+            >close</span
+          >
         </div>
-  
-        <div class="flex-row items-center alert warning rounded-sm mt-1 p-1">
-          <span class="material-icons alert-icon">warning</span>
-          <p>This is a warning alert!</p>
-          <div class="flex-row items-center ml-auto">
-            <button class="alert-button rounded-sm px-1">UNDO</button>
-            <span class="material-icons flex-row items-center alert-close rounded-full pointer ml-1">close</span>
-          </div>
+      </div>
+
+      <div class="flex-row items-center alert warning rounded-sm mt-1 p-1">
+        <span class="material-icons alert-icon">warning</span>
+        <p>This is a warning alert!</p>
+        <div class="flex-row items-center ml-auto">
+          <button class="alert-button rounded-sm px-1">UNDO</button>
+          <span
+            class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+            >close</span
+          >
         </div>
-  
-        <div class="flex-row items-center alert info rounded-sm mt-1 p-1">
-          <span class="material-icons alert-icon">warning</span>
-          <p>This is an info alert!</p>
-          <div class="flex-row items-center ml-auto">
-            <button class="alert-button rounded-sm px-1">UNDO</button>
-            <span class="material-icons flex-row items-center alert-close rounded-full pointer ml-1">close</span>
-          </div>
+      </div>
+
+      <div class="flex-row items-center alert info rounded-sm mt-1 p-1">
+        <span class="material-icons alert-icon">warning</span>
+        <p>This is an info alert!</p>
+        <div class="flex-row items-center ml-auto">
+          <button class="alert-button rounded-sm px-1">UNDO</button>
+          <span
+            class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+            >close</span
+          >
         </div>
-  
-        <div class="flex-row items-center alert success rounded-sm mt-1 p-1">
-          <span class="material-icons alert-icon">warning</span>
-          <p>This is a success alert!</p>
-          <div class="flex-row items-center ml-auto">
-            <button class="alert-button rounded-sm px-1">UNDO</button>
-            <span class="material-icons flex-row items-center alert-close rounded-full pointer ml-1">close</span>
-          </div>
+      </div>
+
+      <div class="flex-row items-center alert success rounded-sm mt-1 p-1">
+        <span class="material-icons alert-icon">warning</span>
+        <p>This is a success alert!</p>
+        <div class="flex-row items-center ml-auto">
+          <button class="alert-button rounded-sm px-1">UNDO</button>
+          <span
+            class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+            >close</span
+          >
         </div>
+      </div>
+    </div>
 
     <!-- Badge -->
+    <div class="flex-row flex-center">
+			<div class="relative mx-2">
+				<span class="material-icons">
+					mail
+				</span>
+				<span class="badge">2</span> 
+			</div>
 
-</body>
+			<div class="relative mx-2">
+				<h4>
+					Mail
+				</h4>
+				<span class="badge">2</span> 
+			</div>
+
+			<div class="relative mx-2">
+				<button class="btn-badge">
+					BUTTON
+				</button>
+				<span class="badge">2</span> 
+			</div>    
+
+      <div class="relative">
+        <img
+          class="avatar rounded-full object-fit-cover m-1"
+          src="./assets/avatar1.png"
+          alt="John Doe"
+        />
+        <span class="badge avatar-badge badge-sm badge-border"></span>
+      </div>
+      <div class="relative">
+        <img
+          class="avatar avatar-badge rounded-full object-fit-cover m-1"
+          src="./assets/avatar2.png"
+          alt="John Doe"
+        />
+        <span
+          class="badge avatar-badge avatar-badge-bottom badge-sm green-badge badge-border"
+        ></span>
+      </div>
+      <div class="relative">
+        <img
+          class="avatar rounded-full object-fit-cover m-1"
+          src="./assets/avatar3.png"
+          alt="John Doe"
+        />
+        <span class="badge avatar-badge">2</span>
+      </div>
+    </div>
+
+		<!-- Button -->
+
+  </body>
 </html>
