@@ -1,0 +1,31 @@
+.btn-primary {
+  color: var(--white);
+  background-color: var(--red);
+}
+.btn-primary:hover {
+  background-color: var(--dark-red);
+}
+
+.btn-outlined {
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+.btn-outlined:hover {
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+
+.btn-icon {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: var(--dark-green);
+  border: 1px solid var(--dark-green);
+}
+.btn-icon:hover {
+  color: var(--white);
+  background-color: var(--dark-green);
+}
+
+.btn-link:hover {
+  border-bottom: 1px solid black;
+}
