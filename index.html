@@ -267,12 +267,40 @@
 
 		<!--Responsive Image -->
 		<div class="flex-row flex-center">
-			<div class="flex flex-center resize-h m-1 py-1">
+			<div class="flex flex-center border resize-h m-1 py-1">
 				<img class="w-100 h-20 object-fit-cover" src="https://picsum.photos/id/237/1000/500" alt="dog" />
 			</div>
-			<div class="flex flex-center resize-h m-1 py-1">
+			<div class="flex flex-center border resize-h m-1 py-1">
 				<img class="w-100 h-20 rounded-full object-fit-cover" src="https://picsum.photos/id/237/300" alt="dog" />
 			</div>
+		</div>
+
+		<!--Input -->
+		<div class="flex-row flex-center">
+
+			<div class="flex-column m-1">
+				<label for="password">Username</label>
+				<input class="py-1 px-2 text border rounded-sm" id="username" type="text" placeholder="Enter your username">
+				<span class="text rounded-sm red mb-1">Invalid username.</span>
+
+				<label for="password">Password</label>
+				<input class="py-1 px-2 text border rounded-sm" id="password" type="password" placeholder="Enter your password">
+				<span class="text rounded-sm green mb-1">Strong password.</span>
+			</div>
+			
+			<div class="flex-column m-1">
+
+				<label for="password">Your Response</label>
+				<textarea 
+					class="m-1 py-1 px-2 text border rounded-sm resize-none" 
+					name="response" 
+					placeholder="Enter your response..." 
+					id="response" 
+					cols="35" 
+					rows="7">
+				</textarea>
+			</div>
+		
 		</div>
 
   </body>

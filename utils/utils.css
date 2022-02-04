@@ -122,6 +122,11 @@
   font-weight: 900;
 }
 
+/* Font */
+.font-inherit {
+  font: inherit;
+}
+
 /* widths */
 .w-10 {
   width: 10rem;
@@ -437,16 +442,16 @@
 /* resize */
 .resize-h {
   resize: horizontal;
-  border: 1px solid #757575;
   overflow: auto;
 }
 .resize-v {
   resize: vertical;
-  border: 1px solid #757575;
   overflow: auto;
 }
 .resize {
   resize: both;
-  border: 1px solid #757575;
   overflow: auto;
+}
+.resize-none {
+  resize: none;
 }
