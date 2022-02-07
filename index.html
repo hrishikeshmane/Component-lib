@@ -16,286 +16,243 @@
     <title>Fast CSS</title>
   </head>
   <body>
-    	<!-- Avatar -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Avatar</h2>
-			<div class="flex-row flex-center">
-			<img
-				class="avatar-xs rounded-full object-fit-cover m-1"
-				src="./assets/avatar1.png"
-				alt="John Doe"
-			/>
-			<img
-				class="avatar-sm rounded-full object-fit-cover m-1"
-				src="./assets/avatar2.png"
-				alt="John Doe"
-			/>
-			<img
-				class="avatar-md rounded-full object-fit-cover m-1"
-				src="./assets/avatar3.png"
-				alt="John Doe"
-			/>
-			<img
-				class="avatar-lg rounded-full object-fit-cover m-1"
-				src="./assets/avatar1.png"
-				alt="John Doe"
-			/>
-			<img
-				class="avatar rounded-full object-fit-cover m-1"
-				src="./assets/avatar-broken.png"
-				alt="John Doe"
-			/>
-			<div
-				class="avatar-sm letter-avatar rounded-full flex-row flex-center m-1"
-			>
-				<h3 class="font-regular">JD</h3>
-			</div>
-			</div>
+	  	<header class="flex-row items-center">
+			<h2 class="ml-2 inline-block logo">Fast</h2>
+			<h4 class="font-light inline-block mt-1">CSS</h4>
+		</header>
+		<aside class="flex-column">
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Avatar</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Alert</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Badge</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Button</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Card</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Image</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Input</h4>
+		</aside>
+		<main>
+			<!-- Avatar -->
+			<section id="avatar">
+				<h2 class="flex-row flex-center font-regular m-2">Avatar</h2>
+				<div class="flex-row flex-center">
+				<img
+					class="avatar-xs rounded-full object-fit-cover m-1"
+					src="./assets/avatar1.png"
+					alt="John Doe"
+				/>
+				<img
+					class="avatar-sm rounded-full object-fit-cover m-1"
+					src="./assets/avatar2.png"
+					alt="John Doe"
+				/>
+				<img
+					class="avatar-md rounded-full object-fit-cover m-1"
+					src="./assets/avatar3.png"
+					alt="John Doe"
+				/>
+				<img
+					class="avatar-lg rounded-full object-fit-cover m-1"
+					src="./assets/avatar1.png"
+					alt="John Doe"
+				/>
+				<img
+					class="avatar rounded-full object-fit-cover m-1"
+					src="./assets/avatar-broken.png"
+					alt="John Doe"
+				/>
+				<div
+					class="avatar-sm letter-avatar rounded-full flex-row flex-center m-1"
+				>
+					<h3 class="font-regular">JD</h3>
+				</div>
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-xs%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-sm%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar2.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-md%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar3.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-lg%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar-broken.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-sm%2520letter-avatar%2520rounded-full%2520flex-row%2520flex-center%2520m-1%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522font-regular%2522%253EJD%253C%252Fh3%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 714px; height: 165px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+						<hr class="w-80 mb-2"/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Alert -->
+			<section id="alert">
+				<h2 class="flex-row flex-center font-regular m-2">Alert</h2>
+				<div class="flex-column flex-center">
+					<div class="flex-row items-center alert rounded-sm error mt-1 p-1">
+						<span class="material-icons alert-icon">warning</span>
+						<p>This is an error alert!</p>
+						<div class="flex-row items-center ml-auto">
+							<button class="alert-button rounded-sm px-1">UNDO</button>
+							<span
+								class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+								>close</span
+							>
+						</div>
+					</div>
+
+					<div class="flex-row items-center alert warning rounded-sm mt-1 p-1">
+						<span class="material-icons alert-icon">warning</span>
+						<p>This is a warning alert!</p>
+						<div class="flex-row items-center ml-auto">
+							<button class="alert-button rounded-sm px-1">UNDO</button>
+							<span
+								class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+								>close</span
+							>
+						</div>
+					</div>
+
+					<div class="flex-row items-center alert info rounded-sm mt-1 p-1">
+						<span class="material-icons alert-icon">warning</span>
+						<p>This is an info alert!</p>
+						<div class="flex-row items-center ml-auto">
+							<button class="alert-button rounded-sm px-1">UNDO</button>
+							<span
+								class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+								>close</span
+							>
+						</div>
+					</div>
+
+					<div class="flex-row items-center alert success rounded-sm mt-1 p-1">
+						<span class="material-icons alert-icon">warning</span>
+						<p>This is a success alert!</p>
+						<div class="flex-row items-center ml-auto">
+							<button class="alert-button rounded-sm px-1">UNDO</button>
+							<span
+								class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
+								>close</span
+							>
+						</div>
+					</div>
+				</div>
 				<div class="flex-column flex-center">
 					<iframe
 						class="m-2"
-						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-xs%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-sm%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar2.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-md%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar3.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar-lg%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar-broken.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar-sm%2520letter-avatar%2520rounded-full%2520flex-row%2520flex-center%2520m-1%2522%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522font-regular%2522%253EJD%253C%252Fh3%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-						style="width: 714px; height: 165px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-column%2520flex-center%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520rounded-sm%2520error%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520error%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520warning%2520rounded-sm%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520warning%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520info%2520rounded-sm%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520info%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520success%2520rounded-sm%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520success%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+						style="width: 727px; height: 538px; border:0; transform: scale(1); overflow:hidden;"
 						sandbox="allow-scripts allow-same-origin">
 					</iframe>
 					<hr class="w-80 mb-2"/>
 				</div>
-			</div>
-		</section>
+			</section>
 
-    	<!-- Alert -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Alert</h2>
-			<div class="flex-column flex-center">
-				<div class="flex-row items-center alert rounded-sm error mt-1 p-1">
-					<span class="material-icons alert-icon">warning</span>
-					<p>This is an error alert!</p>
-					<div class="flex-row items-center ml-auto">
-						<button class="alert-button rounded-sm px-1">UNDO</button>
+			<!-- Badge -->
+			<section id="badge">
+				<h2 class="flex-row flex-center font-regular m-2">Badge</h2>
+				<div class="flex-row flex-center">
+					<div class="relative mx-2">
+						<span class="material-icons">
+							mail
+						</span>
+						<span class="badge">2</span> 
+					</div>
+
+					<div class="relative mx-2">
+						<h4>
+							Mail
+						</h4>
+						<span class="badge">2</span> 
+					</div>
+
+					<div class="relative mx-2">
+						<button class="btn-badge">
+							BUTTON
+						</button>
+						<span class="badge">2</span> 
+					</div>    
+
+					<div class="relative">
+						<img
+							class="avatar rounded-full object-fit-cover m-1"
+							src="./assets/avatar1.png"
+							alt="John Doe"
+						/>
+						<span class="badge avatar-badge badge-sm badge-border"></span>
+					</div>
+					<div class="relative">
+						<img
+							class="avatar avatar-badge rounded-full object-fit-cover m-1"
+							src="./assets/avatar2.png"
+							alt="John Doe"
+						/>
 						<span
-							class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
-							>close</span
-						>
+							class="badge avatar-badge avatar-badge-bottom badge-sm green-badge badge-border"
+						></span>
+					</div>
+					<div class="relative">
+						<img
+							class="avatar rounded-full object-fit-cover m-1"
+							src="./assets/avatar3.png"
+							alt="John Doe"
+						/>
+						<span class="badge avatar-badge">2</span>
 					</div>
 				</div>
-
-				<div class="flex-row items-center alert warning rounded-sm mt-1 p-1">
-					<span class="material-icons alert-icon">warning</span>
-					<p>This is a warning alert!</p>
-					<div class="flex-row items-center ml-auto">
-						<button class="alert-button rounded-sm px-1">UNDO</button>
-						<span
-							class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
-							>close</span
-						>
-					</div>
+				<div class="flex-column flex-center">
+					<iframe
+						class="m-2"
+						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Email%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E2%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMail%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E2%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-badge%2522%253EBUTTON%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E2%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2520badge-sm%2520badge-border%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-badge%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar2.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2520avatar-badge-bottom%2520badge-sm%2520green-badge%2520badge-border%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar3.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+						style="width: 800px; height: 386px; border:0; transform: scale(1); overflow:hidden;"
+						sandbox="allow-scripts allow-same-origin">
+					</iframe>
+					<hr class="w-80 mb-2"/>
 				</div>
+			</section>
 
-				<div class="flex-row items-center alert info rounded-sm mt-1 p-1">
-					<span class="material-icons alert-icon">warning</span>
-					<p>This is an info alert!</p>
-					<div class="flex-row items-center ml-auto">
-						<button class="alert-button rounded-sm px-1">UNDO</button>
-						<span
-							class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
-							>close</span
-						>
-					</div>
-				</div>
-
-				<div class="flex-row items-center alert success rounded-sm mt-1 p-1">
-					<span class="material-icons alert-icon">warning</span>
-					<p>This is a success alert!</p>
-					<div class="flex-row items-center ml-auto">
-						<button class="alert-button rounded-sm px-1">UNDO</button>
-						<span
-							class="material-icons flex-row items-center alert-close rounded-full pointer ml-1"
-							>close</span
-						>
-					</div>
-				</div>
-			</div>
-			<div class="flex-column flex-center">
-				<iframe
-					class="m-2"
-					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-column%2520flex-center%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520rounded-sm%2520error%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520error%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520warning%2520rounded-sm%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520warning%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520info%2520rounded-sm%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520an%2520info%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520alert%2520success%2520rounded-sm%2520mt-1%2520p-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520alert-icon%2522%253Ewarning%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520success%2520alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522alert-button%2520rounded-sm%2520px-1%2522%253EUNDO%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520flex-row%2520items-center%2520alert-close%2520rounded-full%2520pointer%2520ml-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-					style="width: 727px; height: 538px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>
-				<hr class="w-80 mb-2"/>
-			</div>
-		</section>
-
-    	<!-- Badge -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Badge</h2>
-			<div class="flex-row flex-center">
-				<div class="relative mx-2">
-					<span class="material-icons">
-						mail
-					</span>
-					<span class="badge">2</span> 
-				</div>
-
-				<div class="relative mx-2">
-					<h4>
-						Mail
-					</h4>
-					<span class="badge">2</span> 
-				</div>
-
-				<div class="relative mx-2">
-					<button class="btn-badge">
-						BUTTON
+			<!-- Button -->
+			<section id="button">
+				<h2 class="flex-row flex-center font-regular m-2">Button</h2>
+				<div class="flex-row flex-center">
+					<button class="btn-primary py-1 px-3 m-1 rounded-sm transition-3">
+						Button
 					</button>
-					<span class="badge">2</span> 
-				</div>    
 
-				<div class="relative">
-					<img
-						class="avatar rounded-full object-fit-cover m-1"
-						src="./assets/avatar1.png"
-						alt="John Doe"
-					/>
-					<span class="badge avatar-badge badge-sm badge-border"></span>
+					<button class="btn-outlined py-1 px-3 m-1 rounded-sm transition-3">
+						Outlined
+					</button>
+
+					<button class="btn-icon px-1 m-1 rounded-sm transition-3">
+						<span class="material-icons">home</span>
+					</button>
+
+					<button class="btn-floating rounded-full flex flex-center m-1 transition-5">
+						<span class="material-icons">add</span>
+					</button>
+
+					<button class="btn-link px-2 m-1 transition-5">
+						<h4 class="font-regular">Link</h4>
+					</button>
 				</div>
-				<div class="relative">
-					<img
-						class="avatar avatar-badge rounded-full object-fit-cover m-1"
-						src="./assets/avatar2.png"
-						alt="John Doe"
-					/>
-					<span
-						class="badge avatar-badge avatar-badge-bottom badge-sm green-badge badge-border"
-					></span>
+				<div class="flex-column flex-center">
+					<iframe
+						class="m-2"
+						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520py-1%2520px-3%2520m-1%2520rounded-sm%2520transition-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Button%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520py-1%2520px-3%2520m-1%2520rounded-sm%2520transition-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Outlined%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520px-1%2520m-1%2520rounded-sm%2520transition-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Ehome%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-floating%2520rounded-full%2520flex%2520flex-center%2520m-1%2520transition-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eadd%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-link%2520px-2%2520m-1%2520transition-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522font-regular%2522%253ELink%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+						style="width: 549px; height: 317px; border:0; transform: scale(1); overflow:hidden;"
+						sandbox="allow-scripts allow-same-origin">
+					</iframe>
+					<hr class="w-80 mb-2"/>
 				</div>
-				<div class="relative">
-					<img
-						class="avatar rounded-full object-fit-cover m-1"
-						src="./assets/avatar3.png"
-						alt="John Doe"
-					/>
-					<span class="badge avatar-badge">2</span>
-				</div>
-			</div>
-			<div class="flex-column flex-center">
-				<iframe
-					class="m-2"
-					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Email%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E2%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EMail%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E2%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2520mx-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-badge%2522%253EBUTTON%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E2%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2520badge-sm%2520badge-border%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520avatar-badge%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar2.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2520avatar-badge-bottom%2520badge-sm%2520green-badge%2520badge-border%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522relative%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522avatar%2520rounded-full%2520object-fit-cover%2520m-1%2522%2520src%253D%2522.%252Fassets%252Favatar3.png%2522%2520alt%253D%2522John%2520Doe%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520avatar-badge%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-					style="width: 800px; height: 386px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>
-				<hr class="w-80 mb-2"/>
-			</div>
-		</section>
+			</section>
 
-		<!-- Button -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Button</h2>
-			<div class="flex-row flex-center">
-				<button class="btn-primary py-1 px-3 m-1 rounded-sm transition-3">
-					Button
-				</button>
-
-				<button class="btn-outlined py-1 px-3 m-1 rounded-sm transition-3">
-					Outlined
-				</button>
-
-				<button class="btn-icon px-1 m-1 rounded-sm transition-3">
-					<span class="material-icons">home</span>
-				</button>
-
-				<button class="btn-floating rounded-full flex flex-center m-1 transition-5">
-					<span class="material-icons">add</span>
-				</button>
-
-				<button class="btn-link px-2 m-1 transition-5">
-					<h4 class="font-regular">Link</h4>
-				</button>
-			</div>
-			<div class="flex-column flex-center">
-				<iframe
-					class="m-2"
-					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520py-1%2520px-3%2520m-1%2520rounded-sm%2520transition-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Button%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520py-1%2520px-3%2520m-1%2520rounded-sm%2520transition-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Outlined%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520px-1%2520m-1%2520rounded-sm%2520transition-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Ehome%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-floating%2520rounded-full%2520flex%2520flex-center%2520m-1%2520transition-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2522%253Eadd%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-link%2520px-2%2520m-1%2520transition-5%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522font-regular%2522%253ELink%253C%252Fh4%253E%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
-					style="width: 549px; height: 317px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>
-				<hr class="w-80 mb-2"/>
-			</div>
-		</section>
-
-		<!-- Vetical Cards and Overlay -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Vetical Cards and Overlay</h2>
-			<div class="flex-row flex-center wrap">
-				<!-- Vetical Card -->
-				<div class="card card-shadow flex-column relative rounded-sm w-30 p-1 m-2">
-					<img class="rounded-sm w-100 h-20 rounded-sm object-fit-cover" src="https://picsum.photos/seed/picsum/500/500" alt="Our Changing Planet" />
-					<span class="card-badge absolute rounded-sm font-light top-1 left-1 px-1 m-1">New</span>
-					<span class="material-icons absolute rounded-sm font-light pointer top-1 right-0 px-1 m-1">close</span>
-					<h4>Our Changing Planet</h4>
-					<small class="gray">by Kurt Wagner</small>
-					<p class="text py-1">
-						Visit ten places on our planet that are undergoing the biggest changes today.
-					</p>
-					<div class="flex-row items-center mt-1">
-						<div class="flex-row">
-							<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
-							<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
-						</div>
-						<button class="btn rounded-full p-1 transition-3 ml-auto">
-							<span class="material-icons dark-blue">share</span>
-						</button>
-					</div>
-				</div>
-
-				<!-- Overlay-->
-				<div class="card card-shadow flex-column relative rounded-sm w-30 p-1 m-2">
-					<img class="rounded-sm w-100 h-20 rounded-sm object-fit-cover" src="https://picsum.photos/seed/picsum/500/500" alt="Our Changing Planet" />
-					<h4>Our Changing Planet</h4>
-					<small class="gray">by Kurt Wagner</small>
-					<p class="text py-1">
-						Visit ten places on our planet that are undergoing the biggest changes today.
-					</p>
-					<div class="flex-row items-center mt-1">
-						<div class="flex-row">
-							<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
-							<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
-						</div>
-						<button class="btn rounded-full p-1 transition-3 ml-auto">
-							<span class="material-icons dark-blue">share</span>
-						</button>
-					</div>
-					<div class="card no-card-border flex-column flex-center text-lg opacity-80 absolute top-0 left-0 w-100 h-100">Coming soon...</div>
-				</div>
-			</div>
-			<div class="flex-column flex-center">
-				<iframe
-					class="m-2"
-					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2520wrap%2522%253E%250A%2520%2520%2520%2520%253C%21--%2520Vetical%2520Card%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-shadow%2520flex-column%2520relative%2520rounded-sm%2520w-30%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522rounded-sm%2520w-100%2520h-20%2520rounded-sm%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F500%252F500%2522%2520alt%253D%2522Our%2520Changing%2520Planet%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2520absolute%2520rounded-sm%2520font-light%2520top-1%2520left-1%2520px-1%2520m-1%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520absolute%2520rounded-sm%2520font-light%2520pointer%2520top-1%2520right-0%2520px-1%2520m-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Overlay--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-shadow%2520flex-column%2520relative%2520rounded-sm%2520w-30%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522rounded-sm%2520w-100%2520h-20%2520rounded-sm%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F500%252F500%2522%2520alt%253D%2522Our%2520Changing%2520Planet%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520no-card-border%2520flex-column%2520flex-center%2520text-lg%2520opacity-80%2520absolute%2520top-0%2520left-0%2520w-100%2520h-100%2522%253EComing%2520soon...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%253C%252Fdiv%253E"
-					style="width: 985px; height: 621px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>
-				<hr class="w-80 mb-2"/>
-			</div>
-		</section>
-
-		<!-- Horizontal and Text only Card -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Horizontal and Text only Card</h2>
-			<div class="flex-row flex-center wrap">
-				<div class="card flex-row relative rounded-sm w-50 p-1 m-2">
-					<img class="rounded-sm w-50 h-20 rounded-sm object-fit-cover mr-1" 
-						src="https://picsum.photos/seed/picsum/500/500" 
-						alt="Our Changing Planet" 
-					/>
-					<div class="flex-column">
+			<!-- Vetical Cards and Overlay -->
+			<section id="card">
+				<h2 class="flex-row flex-center font-regular m-2">Vetical Cards and Overlay</h2>
+				<div class="flex-row flex-center wrap">
+					<!-- Vetical Card -->
+					<div class="card card-shadow flex-column relative rounded-sm w-30 p-1 m-2">
+						<img class="rounded-sm w-100 h-20 rounded-sm object-fit-cover" src="https://picsum.photos/seed/picsum/500/500" alt="Our Changing Planet" />
+						<span class="card-badge absolute rounded-sm font-light top-1 left-1 px-1 m-1">New</span>
+						<span class="material-icons absolute rounded-sm font-light pointer top-1 right-0 px-1 m-1">close</span>
 						<h4>Our Changing Planet</h4>
 						<small class="gray">by Kurt Wagner</small>
 						<p class="text py-1">
 							Visit ten places on our planet that are undergoing the biggest changes today.
 						</p>
-						<div class="flex-row items-center mt-auto">
+						<div class="flex-row items-center mt-1">
 							<div class="flex-row">
 								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
 								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
@@ -305,16 +262,16 @@
 							</button>
 						</div>
 					</div>
-				</div>
 
-				<div class="card flex-row relative rounded-sm w-30 p-1 m-2">
-					<div class="flex-column">
+					<!-- Overlay-->
+					<div class="card card-shadow flex-column relative rounded-sm w-30 p-1 m-2">
+						<img class="rounded-sm w-100 h-20 rounded-sm object-fit-cover" src="https://picsum.photos/seed/picsum/500/500" alt="Our Changing Planet" />
 						<h4>Our Changing Planet</h4>
 						<small class="gray">by Kurt Wagner</small>
 						<p class="text py-1">
 							Visit ten places on our planet that are undergoing the biggest changes today.
 						</p>
-						<div class="flex-row items-center mt-auto">
+						<div class="flex-row items-center mt-1">
 							<div class="flex-row">
 								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
 								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
@@ -323,122 +280,135 @@
 								<span class="material-icons dark-blue">share</span>
 							</button>
 						</div>
+						<div class="card no-card-border flex-column flex-center text-lg opacity-80 absolute top-0 left-0 w-100 h-100">Coming soon...</div>
 					</div>
 				</div>
-			</div>
-			<div class="flex-row flex-center wrap">
+				<div class="flex-column flex-center">
+					<iframe
+						class="m-2"
+						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2520wrap%2522%253E%250A%2520%2520%2520%2520%253C%21--%2520Vetical%2520Card%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-shadow%2520flex-column%2520relative%2520rounded-sm%2520w-30%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522rounded-sm%2520w-100%2520h-20%2520rounded-sm%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F500%252F500%2522%2520alt%253D%2522Our%2520Changing%2520Planet%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2520absolute%2520rounded-sm%2520font-light%2520top-1%2520left-1%2520px-1%2520m-1%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520absolute%2520rounded-sm%2520font-light%2520pointer%2520top-1%2520right-0%2520px-1%2520m-1%2522%253Eclose%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520Overlay--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-shadow%2520flex-column%2520relative%2520rounded-sm%2520w-30%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522rounded-sm%2520w-100%2520h-20%2520rounded-sm%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F500%252F500%2522%2520alt%253D%2522Our%2520Changing%2520Planet%2522%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520no-card-border%2520flex-column%2520flex-center%2520text-lg%2520opacity-80%2520absolute%2520top-0%2520left-0%2520w-100%2520h-100%2522%253EComing%2520soon...%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%253C%252Fdiv%253E"
+						style="width: 985px; height: 621px; border:0; transform: scale(1); overflow:hidden;"
+						sandbox="allow-scripts allow-same-origin">
+					</iframe>
+					<hr class="w-80 mb-2"/>
+				</div>
+			</section>
 
-				<div class="card flex-row relative rounded-sm w-50 p-1 m-2">
-					<img class="rounded-sm w-50 h-20 rounded-sm object-fit-cover mr-1" 
-						src="https://picsum.photos/seed/picsum/500/500" 
-						alt="Our Changing Planet" 
-					/>
-					<div class="flex-column">
-						<h4>Our Changing Planet</h4>
-						<small class="gray">by Kurt Wagner</small>
-						<p class="text py-1">
-							Visit ten places on our planet that are undergoing the biggest changes today.
-						</p>
-						<div class="flex-row items-center mt-auto">
-							<div class="flex-row">
-								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
-								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
+			<!-- Horizontal and Text only Card -->
+			<section>
+				<h2 class="flex-row flex-center font-regular m-2">Horizontal and Text only Card</h2>
+				<div class="flex-row flex-center wrap">
+					<div class="card flex-row relative rounded-sm w-50 p-1 m-2">
+						<img class="rounded-sm w-50 h-20 rounded-sm object-fit-cover mr-1" 
+							src="https://picsum.photos/seed/picsum/500/500" 
+							alt="Our Changing Planet" 
+						/>
+						<div class="flex-column">
+							<h4>Our Changing Planet</h4>
+							<small class="gray">by Kurt Wagner</small>
+							<p class="text py-1">
+								Visit ten places on our planet that are undergoing the biggest changes today.
+							</p>
+							<div class="flex-row items-center mt-auto">
+								<div class="flex-row">
+									<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
+									<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
+								</div>
+								<button class="btn rounded-full p-1 transition-3 ml-auto">
+									<span class="material-icons dark-blue">share</span>
+								</button>
 							</div>
-							<button class="btn rounded-full p-1 transition-3 ml-auto">
-								<span class="material-icons dark-blue">share</span>
-							</button>
+						</div>
+					</div>
+
+					<div class="card flex-row relative rounded-sm w-30 p-1 m-2">
+						<div class="flex-column">
+							<h4>Our Changing Planet</h4>
+							<small class="gray">by Kurt Wagner</small>
+							<p class="text py-1">
+								Visit ten places on our planet that are undergoing the biggest changes today.
+							</p>
+							<div class="flex-row items-center mt-auto">
+								<div class="flex-row">
+									<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
+									<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
+								</div>
+								<button class="btn rounded-full p-1 transition-3 ml-auto">
+									<span class="material-icons dark-blue">share</span>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div class="flex-column flex-center">
+					<iframe
+						class="m-2"
+						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2520wrap%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-row%2520relative%2520rounded-sm%2520w-50%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522rounded-sm%2520w-50%2520h-20%2520rounded-sm%2520object-fit-cover%2520mr-1%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F500%252F500%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Our%2520Changing%2520Planet%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-row%2520relative%2520rounded-sm%2520w-30%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+						style="width: 674px; height: 621px; border:0; transform: scale(1); overflow:hidden;"
+						sandbox="allow-scripts allow-same-origin">
+					</iframe>	
+					<hr class="w-80 mb-2"/>		
+				</div>
+			</section>
 
-				<div class="card flex-row relative rounded-sm w-30 p-1 m-2">
-					<div class="flex-column">
-						<h4>Our Changing Planet</h4>
-						<small class="gray">by Kurt Wagner</small>
-						<p class="text py-1">
-							Visit ten places on our planet that are undergoing the biggest changes today.
-						</p>
-						<div class="flex-row items-center mt-auto">
-							<div class="flex-row">
-								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Read</button>
-								<button class="btn-outlined rounded-sm p-1 mr-1 transition-3">Bookmark</button>
-							</div>
-							<button class="btn rounded-full p-1 transition-3 ml-auto">
-								<span class="material-icons dark-blue">share</span>
-							</button>
-						</div>
+			<!--Responsive Image -->
+			<section id="image">
+				<h2 class="flex-row flex-center font-regular m-2">Responsive Image</h2>
+				<div class="flex-row flex-center">
+					<div class="flex flex-center border resize-h m-1 py-1">
+						<img class="w-100 h-20 object-fit-cover" src="https://picsum.photos/id/237/1000/500" alt="dog" />
+					</div>
+					<div class="flex flex-center border resize-h m-1 py-1">
+						<img class="w-100 h-20 rounded-full object-fit-cover" src="https://picsum.photos/id/237/300" alt="dog" />
 					</div>
 				</div>
-
-			</div>
-			<div class="flex-column flex-center">
-				<iframe
-					class="m-2"
-					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2520wrap%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-row%2520relative%2520rounded-sm%2520w-50%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522rounded-sm%2520w-50%2520h-20%2520rounded-sm%2520object-fit-cover%2520mr-1%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fseed%252Fpicsum%252F500%252F500%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522Our%2520Changing%2520Planet%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520flex-row%2520relative%2520rounded-sm%2520w-30%2520p-1%2520m-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EOur%2520Changing%2520Planet%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522gray%2522%253Eby%2520Kurt%2520Wagner%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Visit%2520ten%2520places%2520on%2520our%2520planet%2520that%2520are%2520undergoing%2520the%2520biggest%2520changes%2520today.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2520items-center%2520mt-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522flex-row%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253ERead%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-outlined%2520rounded-sm%2520p-1%2520mr-1%2520transition-3%2522%253EBookmark%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520rounded-full%2520p-1%2520transition-3%2520ml-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520dark-blue%2522%253Eshare%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-					style="width: 674px; height: 621px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>	
-				<hr class="w-80 mb-2"/>		
-			</div>
-		</section>
-
-		<!--Responsive Image -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Responsive Image</h2>
-			<div class="flex-row flex-center">
-				<div class="flex flex-center border resize-h m-1 py-1">
-					<img class="w-100 h-20 object-fit-cover" src="https://picsum.photos/id/237/1000/500" alt="dog" />
+				<div class="flex-column flex-center">
+					<iframe
+						class="m-2"
+						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex%2520flex-center%2520border%2520resize-h%2520m-1%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-100%2520h-20%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F1000%252F500%2522%2520alt%253D%2522dog%2522%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex%2520flex-center%2520border%2520resize-h%2520m-1%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-100%2520h-20%2520rounded-full%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F300%2522%2520alt%253D%2522dog%2522%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+						style="width: 747px; height: 138px; border:0; transform: scale(1); overflow:hidden;"
+						sandbox="allow-scripts allow-same-origin">
+					</iframe>
+					<hr class="w-80 mb-2"/>
 				</div>
-				<div class="flex flex-center border resize-h m-1 py-1">
-					<img class="w-100 h-20 rounded-full object-fit-cover" src="https://picsum.photos/id/237/300" alt="dog" />
-				</div>
-			</div>
-			<div class="flex-column flex-center">
-				<iframe
-					class="m-2"
-					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex%2520flex-center%2520border%2520resize-h%2520m-1%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-100%2520h-20%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F1000%252F500%2522%2520alt%253D%2522dog%2522%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex%2520flex-center%2520border%2520resize-h%2520m-1%2520py-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522w-100%2520h-20%2520rounded-full%2520object-fit-cover%2522%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252Fid%252F237%252F300%2522%2520alt%253D%2522dog%2522%252F%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-					style="width: 747px; height: 138px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>
-				<hr class="w-80 mb-2"/>
-			</div>
-		</section>
+			</section>
 
-		<!--Input -->
-		<section>
-			<h2 class="flex-row flex-center m-2">Input</h2>
-			<div class="flex-row flex-center">
-				<div class="flex-column m-1">
-					<label for="password">Username</label>
-					<input class="py-1 px-2 text border rounded-sm" id="username" type="text" placeholder="Enter your username">
-					<span class="text rounded-sm red mb-1">Invalid username.</span>
+			<!--Input -->
+			<section id="input">
+				<h2 class="flex-row flex-center font-regular m-2">Input</h2>
+				<div class="flex-row flex-center">
+					<div class="flex-column m-1">
+						<label for="password">Username</label>
+						<input class="py-1 px-2 text border rounded-sm" id="username" type="text" placeholder="Enter your username">
+						<span class="text rounded-sm red mb-1">Invalid username.</span>
 
-					<label for="password">Password</label>
-					<input class="py-1 px-2 text border rounded-sm" id="password" type="password" placeholder="Enter your password">
-					<span class="text rounded-sm green mb-1">Strong password.</span>
+						<label for="password">Password</label>
+						<input class="py-1 px-2 text border rounded-sm" id="password" type="password" placeholder="Enter your password">
+						<span class="text rounded-sm green mb-1">Strong password.</span>
+					</div>
+					<div class="flex-column m-1">
+						<label for="password">Your Response</label>
+						<textarea 
+							class="m-1 py-1 px-2 text border rounded-sm resize-none" 
+							name="response" 
+							placeholder="Enter your response..." 
+							id="response" 
+							cols="35" 
+							rows="7">
+						</textarea>
+					</div>
 				</div>
-				<div class="flex-column m-1">
-					<label for="password">Your Response</label>
-					<textarea 
-						class="m-1 py-1 px-2 text border rounded-sm resize-none" 
-						name="response" 
-						placeholder="Enter your response..." 
-						id="response" 
-						cols="35" 
-						rows="7">
-					</textarea>
+				<div class="flex-column flex-center">
+					<iframe
+						class="m-2"
+						src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-column%2520m-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522py-1%2520px-2%2520text%2520border%2520rounded-sm%2522%2520id%253D%2522username%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520username%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520rounded-sm%2520red%2520mb-1%2522%253EInvalid%2520username.%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522py-1%2520px-2%2520text%2520border%2520rounded-sm%2522%2520id%253D%2522password%2522%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520your%2520password%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520rounded-sm%2520green%2520mb-1%2522%253EStrong%2520password.%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-column%2520m-1%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EYour%2520Response%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Ctextarea%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522m-1%2520py-1%2520px-2%2520text%2520border%2520rounded-sm%2520resize-none%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522response%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520response...%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522response%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cols%253D%252235%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520rows%253D%25227%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ftextarea%253E%250A%2520%2520%253C%252Fdiv"
+						style="width: 800px; height: 345px; border:0; transform: scale(1); overflow:hidden;"
+						sandbox="allow-scripts allow-same-origin">
+					</iframe>
+					<hr class="w-80 mb-2"/>
 				</div>
-			</div>
-			<div class="flex-column flex-center">
-				<iframe
-					class="m-2"
-					src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522flex-row%2520flex-center%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522flex-column%2520m-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EUsername%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522py-1%2520px-2%2520text%2520border%2520rounded-sm%2522%2520id%253D%2522username%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520username%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520rounded-sm%2520red%2520mb-1%2522%253EInvalid%2520username.%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Cinput%2520class%253D%2522py-1%2520px-2%2520text%2520border%2520rounded-sm%2522%2520id%253D%2522password%2522%2520type%253D%2522password%2522%2520placeholder%253D%2522Enter%2520your%2520password%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520rounded-sm%2520green%2520mb-1%2522%253EStrong%2520password.%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%253Cdiv%2520class%253D%2522flex-column%2520m-1%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522password%2522%253EYour%2520Response%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%253Ctextarea%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522m-1%2520py-1%2520px-2%2520text%2520border%2520rounded-sm%2520resize-none%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522response%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520your%2520response...%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522response%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cols%253D%252235%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520rows%253D%25227%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ftextarea%253E%250A%2520%2520%253C%252Fdiv"
-					style="width: 800px; height: 345px; border:0; transform: scale(1); overflow:hidden;"
-					sandbox="allow-scripts allow-same-origin">
-				</iframe>
-				<hr class="w-80 mb-2"/>
-			</div>
-		</section>
-
+			</section>
+		</main>
+		<script src="index.js" type="text/javascript"></script>
   </body>
 </html>

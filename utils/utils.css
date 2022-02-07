@@ -61,6 +61,20 @@
   color: var(--green);
 }
 
+.logo {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.144);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* font sizes */
 .text-xs {
   font-size: 0.4rem;
@@ -454,4 +468,20 @@
 }
 .resize-none {
   resize: none;
+}
+
+/* Inline / Block */
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/* Hover */
+.hover-ul:hover {
+  border-bottom: 1px solid black;
 }
