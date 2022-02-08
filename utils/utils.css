@@ -32,6 +32,10 @@
   --modal-background: #00000044;
 }
 
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
 /* text colors */
 .gray {
   color: var(--gray);

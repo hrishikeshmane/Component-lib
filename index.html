@@ -33,7 +33,14 @@
 			<!-- Avatar -->
 			<section id="avatar">
 				<h2 class="flex-row flex-center font-regular m-2">Avatar</h2>
-				<div class="flex-row flex-center">
+				<div class="flex flex-column flex-center my-4">
+					<p><b>Image avatars</b> can be created by <code>img</code> tag <code>src</code> attribute</p>
+					<p><b>Broken avatars</b> are similar to <b>Image avatars</b> with broken imagee as a <code>src</code></p>
+					<p><b>Letter avatars</b> can be created by a <code>div</code> tag with user's initials enclosed in the tag</p>
+					<p>Sizes can be changed with <code>avatar-xs</code> <code>avatar-sm</code> <code>avatar-md</code> <code>avatar-lg</code> classes</p>
+
+				</div>
+				<div class="flex-row flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
 				<img
 					class="avatar-xs rounded-full object-fit-cover m-1"
 					src="./assets/avatar1.png"
@@ -80,7 +87,12 @@
 			<!-- Alert -->
 			<section id="alert">
 				<h2 class="flex-row flex-center font-regular m-2">Alert</h2>
-				<div class="flex-column flex-center">
+				<div class="flex flex-column flex-center my-4">
+					<p>An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task.</p>
+					<p>The alert offers four severity levels that set a distinctive colors. The variant can be specifed as <code>error</code> <code>warning</code> <code>info</code> <code>success</code> classes. </p>
+					<p>An alert can have an action, such as a close or undo button. It is rendered after the message, at the end of the alert.</p>
+				</div>
+				<div class="flex-column flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
 					<div class="flex-row items-center alert rounded-sm error mt-1 p-1">
 						<span class="material-icons alert-icon">warning</span>
 						<p>This is an error alert!</p>
@@ -143,7 +155,12 @@
 			<!-- Badge -->
 			<section id="badge">
 				<h2 class="flex-row flex-center font-regular m-2">Badge</h2>
-				<div class="flex-row flex-center">
+				<div class="flex flex-column flex-center my-4">
+					<p>Badge generates a small badge to the top-right of its child(ren).</p>
+					<p>The default color of badge is red but the color can be changed to green by <code>green-badge</code> class.</p>
+					<p>Badge can be applied on Text, Icon, Button and Avatar. It defaults to a small rounder dot without any border if no content is specified.</p>
+				</div>
+				<div class="flex-row flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
 					<div class="relative mx-2">
 						<span class="material-icons">
 							mail
@@ -206,7 +223,12 @@
 			<!-- Button -->
 			<section id="button">
 				<h2 class="flex-row flex-center font-regular m-2">Button</h2>
-				<div class="flex-row flex-center">
+				<div class="flex flex-column flex-center my-4">
+					<p>Buttons allow users to take actions, and make choices, with a single click/tap.</p>
+					<p>Here are few variants of button- Primary, Outlined, Icon, Floating, Link.</p>
+					<p>These can be achived by <code>btn-primary</code> <code>btn-outlined</code> <code>btn-icon</code> <code>btn-floating</code> <code>btn-link</code> classes respectively.</p>
+				</div>
+				<div class="flex-row flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
 					<button class="btn-primary py-1 px-3 m-1 rounded-sm transition-3">
 						Button
 					</button>
@@ -241,7 +263,13 @@
 			<!-- Vetical Cards and Overlay -->
 			<section id="card">
 				<h2 class="flex-row flex-center font-regular m-2">Vetical Cards and Overlay</h2>
-				<div class="flex-row flex-center wrap">
+				<div class="flex flex-column flex-center my-4">
+					<p>Cards contain content and actions about a single subject. They display content and actions on a single topic.</p>
+					<p>Cards can be Vertical, Horizontal, With or without Images and overlay</p>
+					<p>They can also come in with a badge and dismiss, with actions buttons</p>
+					<p><code>card-shadow</code> class can be used to render a card with a shadow. Default cards are set to no shadow and a border</p>
+				</div>
+				<div class="flex-row flex-center wrap p-2 w-80 m-auto rounded-sm bg-light-gray">
 					<!-- Vetical Card -->
 					<div class="card card-shadow flex-column relative rounded-sm w-30 p-1 m-2">
 						<img class="rounded-sm w-100 h-20 rounded-sm object-fit-cover" src="https://picsum.photos/seed/picsum/500/500" alt="Our Changing Planet" />
@@ -297,7 +325,7 @@
 			<!-- Horizontal and Text only Card -->
 			<section>
 				<h2 class="flex-row flex-center font-regular m-2">Horizontal and Text only Card</h2>
-				<div class="flex-row flex-center wrap">
+				<div class="flex-row flex-center wrap p-2 w-80 m-auto rounded-sm bg-light-gray">
 					<div class="card flex-row relative rounded-sm w-50 p-1 m-2">
 						<img class="rounded-sm w-50 h-20 rounded-sm object-fit-cover mr-1" 
 							src="https://picsum.photos/seed/picsum/500/500" 
@@ -354,7 +382,12 @@
 			<!--Responsive Image -->
 			<section id="image">
 				<h2 class="flex-row flex-center font-regular m-2">Responsive Image</h2>
-				<div class="flex-row flex-center">
+				<div class="flex flex-column flex-center my-4">
+					<p>Responsive Images stays cover fit even after resizing.</p>
+					<p>The images zoom in and out with maintaing the aspect ratio</p>
+					<p>This can be achieved by <code>object-fit-cover</code> class</p>
+				</div>
+				<div class="flex-row flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
 					<div class="flex flex-center border resize-h m-1 py-1">
 						<img class="w-100 h-20 object-fit-cover" src="https://picsum.photos/id/237/1000/500" alt="dog" />
 					</div>
@@ -376,7 +409,11 @@
 			<!--Input -->
 			<section id="input">
 				<h2 class="flex-row flex-center font-regular m-2">Input</h2>
-				<div class="flex-row flex-center">
+				<div class="flex flex-column flex-center my-4">
+					<p>Input let users enter and edit text. They typically appear in forms and dialogs</p>
+					<p>Input represents success message or an error message depending on the validation check. </p>
+				</div>
+				<div class="flex-row flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
 					<div class="flex-column m-1">
 						<label for="password">Username</label>
 						<input class="py-1 px-2 text border rounded-sm" id="username" type="text" placeholder="Enter your username">
