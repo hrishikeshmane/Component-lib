@@ -6,6 +6,7 @@ https://fastcss.netlify.app/
 
 ```
     git clone https://github.com/hrishikeshmane/Component-lib.git
+
     And open the index.html file in browser
 ```
 
