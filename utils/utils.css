@@ -13,8 +13,8 @@
   --offwhite: #f7f7f7;
   --black: #282828;
   --gray: #9a9a9a;
-  --light-gray: #e5e5e5;
-  --dark-gray: #a3a3a3;
+  --light-gray: #eeeeee;
+  --dark-gray: #c2c2c2;
   --gray-hover: #737373;
   --blue: #2563eb;
   --light-blue: #dbeafe;
@@ -146,6 +146,10 @@
 }
 
 /* widths */
+.w-5 {
+  width: 5rem;
+}
+
 .w-10 {
   width: 10rem;
 }
@@ -194,6 +198,10 @@
   width: 100vw;
 }
 /* heights */
+.h-4 {
+  height: 4rem;
+}
+
 .h-10 {
   height: 10rem;
 }
