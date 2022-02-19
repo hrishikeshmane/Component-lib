@@ -1,0 +1,38 @@
+/* utilities */
+@import url("./utils/utils.css");
+@import url("./utils/margin.css");
+@import url("./utils/padding.css");
+@import url("./utils/reset.css");
+
+/* components */
+@import url("./components/avatar.css");
+@import url("./components/alert.css");
+@import url("./components/badge.css");
+@import url("./components/button.css");
+@import url("./components/card.css");
+@import url("./components/image.css");
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "header header"
+    "aside main";
+}
+
+header {
+  border-bottom: 1px solid #cfcece;
+  grid-area: header;
+}
+
+aside {
+  border-right: 1px solid #cfcece;
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+  overflow: auto;
+}
