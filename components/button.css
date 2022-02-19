@@ -38,6 +38,6 @@
 }
 .btn-floating:hover {
   background-color: rgb(255, 128, 0);
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 20%), 0px 3px 10px 0px rgb(0 0 0 / 25%);
+  box-shadow: 0px 2px 1px -1px #00000033, 0px 1px 1px 0px #00000033,
+    0px 3px 10px 0px #00000040;
 }
