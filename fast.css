@@ -2,6 +2,7 @@
 @import url("./utils/utils.css");
 @import url("./utils/margin.css");
 @import url("./utils/padding.css");
+@import url("./utils/grid.css");
 @import url("./utils/reset.css");
 
 /* components */
@@ -11,6 +12,10 @@
 @import url("./components/button.css");
 @import url("./components/card.css");
 @import url("./components/image.css");
+@import url("./components/toast.css");
+@import url("./components/modal.css");
+@import url("./components/typography.css");
+@import url("./components/rating.css");
 
 body {
   display: grid;

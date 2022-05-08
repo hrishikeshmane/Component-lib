@@ -32,6 +32,14 @@
 			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Card</h4>
 			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Image</h4>
 			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Input</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Grid</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Slider</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Toast</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Modal</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Typography</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Rating</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Lists</h4>
+			<h4 class="font-regular mx-2 my-1 pointer hover-ul" onclick="handleOnClick(this)">Navigation</h4>
 		</aside>
 		<main>
 			<!-- Getting Started -->
@@ -485,6 +493,311 @@
 						sandbox="allow-scripts allow-same-origin">
 					</iframe>
 					<hr class="w-80 mb-2"/>
+				</div>
+			</section>
+
+			<!-- Grid -->
+			<section id="grid">
+				<h2 class="flex-row flex-center font-regular m-2">Grid</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>Grids can be created by simplying using <code>grid</code> class.</p>
+					<p>Use <code>grid-cols-`x`</code> to set column count to `x` and <code>gap-`x`</code> to set gap between grid elements.</p>
+
+				</div>
+				<div class="flex-col flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
+					<h5 class="flex-row flex-center ">Grid column 2</h5>
+					<div class="m-2 grid gap-3 grid-cols-2">
+						<div class="bg-blue flex-row white flex-center py-2">1</div>
+						<div class="bg-blue flex-row white flex-center py-2">2</div>
+						<div class="bg-blue flex-row white flex-center py-2">3</div>
+						<div class="bg-blue flex-row white flex-center py-2">4</div>
+						<div class="bg-blue flex-row white flex-center py-2">5</div>
+					</div> 
+					<h5 class="flex-row flex-center ">Grid column 3</h5>
+					<div class="m-2 grid gap-3 grid-cols-3">
+						<div class="bg-blue flex-row white flex-center py-2">1</div>
+						<div class="bg-blue flex-row white flex-center py-2">2</div>
+						<div class="bg-blue flex-row white flex-center py-2">3</div>
+						<div class="bg-blue flex-row white flex-center py-2">4</div>
+						<div class="bg-blue flex-row white flex-center py-2">5</div>
+					</div> 
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=634.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Ch5%2520class%253D%2522flex-row%2520flex-center%2520%2522%253EGrid%2520column%25202%253C%252Fh5%253E%250A%253Cdiv%2520class%253D%2522m-2%2520grid%2520gap-3%2520grid-cols-2%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E1%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E2%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E3%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E4%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E5%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520%250A%253Ch5%2520class%253D%2522flex-row%2520flex-center%2520%2522%253EGrid%2520column%25203%253C%252Fh5%253E%250A%253Cdiv%2520class%253D%2522m-2%2520grid%2520gap-3%2520grid-cols-3%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E1%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E2%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E3%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E4%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522bg-blue%2520flex-row%2520white%2520flex-center%2520py-2%2522%253E5%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%2520"
+							style="width: 100%; height: 270px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+						<hr class="w-80 mb-2"/>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Slider -->
+			<section id="slider">
+				<h2 class="flex-row flex-center font-regular m-2">Slider</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>Slider helps take input as a range. Having input tage with type as <code>range</code> genrates a slider.</p>
+					<p>Use <code>list="tickmarks"</code>in input tag to setup a datalist with <code>id="tickmarks"</code>.</p>
+				</div>
+				<div class="flex-col flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
+						<div class="px-2 my-2">
+							<input type="range" class="w-full">
+						</div>
+
+						<div class="px-2 my-2">
+							<input type="range" list="tickmarks" class="w-full" step="10">
+							<datalist id="tickmarks">
+								<option value="0"></option>
+								<option value="10"></option>
+								<option value="20"></option>
+								<option value="30"></option>
+								<option value="40"></option>
+								<option value="50"></option>
+								<option value="60"></option>
+								<option value="70"></option>
+								<option value="80"></option>
+								<option value="90"></option>
+								<option value="100"></option>
+							</datalist>
+						</div>
+					
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=634.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522px-2%2520my-2%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520class%253D%2522w-full%2522%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522px-2%2520my-2%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520list%253D%2522tickmarks%2522%2520class%253D%2522w-full%2522%2520step%253D%252210%2522%253E%250A%2520%2520%2520%2520%253Cdatalist%2520id%253D%2522tickmarks%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%25220%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252210%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252220%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252230%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252240%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252250%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252260%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252270%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252280%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%252290%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%2520value%253D%2522100%2522%253E%253C%252Foption%253E%250A%2520%2520%2520%2520%253C%252Fdatalist%253E%250A%253C%252Fdiv%253E"
+							style="width: 100%; height: 340px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+						<hr class="w-80 mb-2"/>
+					</div>
+				</div>
+			</section>
+
+
+			<!--Toast -->
+			<section id="toast">
+				<h2 class="flex-row flex-center font-regular m-2">Toast</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>Toast displays a custom message at the bottom of the screen.</p>
+				</div>
+				<div class="flex-row flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
+					<button class="btn-outlined py-1 px-3 rounded-sm transition-3" onclick="showToast()">
+						Show Toast
+					</button>
+					<div id="show-toast">
+						This is a toast
+					</div>
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=634.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-outlined%2520py-1%2520px-3%2520rounded-sm%2520transition-3%2522%2520onclick%253D%2522showToast%28%29%2522%253E%250A%2520%2520%2520%2520Show%2520Toast%250A%253C%252Fbutton%253E%250A%253Cdiv%2520id%253D%2522show-toast%2522%253E%250A%2520%2520%2520%2520This%2520is%2520a%2520toast%250A%253C%252Fdiv%253E%250A"
+							style="width: 100%; height: 150px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=auto&width=634.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=function%2520showToast%28%29%2520%257B%250A%2520%2520%2520%2520var%2520toast%2520%253D%2520document.getElementById%28%2522show-toast%2522%29%253B%250A%2520%2520%2520%2520toast.className%2520%253D%2520%2522show%2522%253B%250A%2520%2520%2520%2520%252F%252F%2520After%25203%2520seconds%252C%2520remove%2520the%2520show%2520class%2520from%2520the%2520div%250A%2520%2520%2520%2520setTimeout%28function%28%29%257B%2520toast.className%2520%253D%2520toast.className.replace%28%2522show%2522%252C%2520%2522%2522%29%253B%2520%257D%252C%25203000%29%253B%250A%2520%2520%257D"
+							style="width: 100%; height: 150px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+
+						<hr class="w-80 mb-2"/>
+					</div>
+				</div>
+			</section>
+
+			<!--Modal -->
+			<section id="modal">
+				<h2 class="flex-row flex-center font-regular m-2">Modal</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>A modal is a dialog box/popup window that is displayed on top of the current page:</p>
+				</div>
+				<div class="flex-row flex-center p-2 w-80 m-auto rounded-sm bg-light-gray">
+					<button class="btn-outlined py-1 px-3 rounded-sm transition-3" onclick="openModal()">
+						Open Modal
+					</button>
+					<div id="open-modal" class="modal">
+						<div class="modal-content rounded-sm w-60 m-auto">
+							<span class="close pointer" id="close">&times;</span>
+							<h4 class="my-1">Modal</h4>
+							<p class="my-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+						</div>
+					</div>
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=auto&width=632.5&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-outlined%2520py-1%2520px-3%2520rounded-sm%2520transition-3%2522%2520onclick%253D%2522openModal%28%29%2522%253E%250A%2520%2520Open%2520Modal%250A%253C%252Fbutton%253E%250A%253Cdiv%2520id%253D%2522open-modal%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-content%2520rounded-sm%2520w-60%2520m-auto%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522close%2520pointer%2522%2520id%253D%2522close%2522%253E%2526times%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ch4%2520class%253D%2522my-1%2522%253EModal%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522my-1%2522%253ELorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipiscing%2520elit.%2520Integer%2520nec%2520odio.%2520Praesent%2520libero.%2520Sed%2520cursus%2520ante%2520dapibus%2520diam.%2520Sed%2520nisi.%2520Nulla%2520quis%2520sem%2520at%2520nibh%2520elementum%2520imperdiet.%2520Duis%2520sagittis%2520ipsum.%2520Praesent%2520mauris.%2520Fusce%2520nec%2520tellus%2520sed%2520augue%2520semper%2520porta.%2520Mauris%2520massa.%2520Vestibulum%2520lacinia%2520arcu%2520eget%2520nulla.%2520%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 100%; height: 230px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=auto&width=632.5&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=dm&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=function%2520openModal%28%29%2520%257B%250A%2520%2520let%2520modal%2520%253D%2520document.getElementById%28%2522open-modal%2522%29%253B%250A%2520%2520modal.style.display%2520%253D%2520%2522block%2522%253B%250A%250A%2520%2520%252F%252F%2520Get%2520the%2520%253Cspan%253E%2520element%2520that%2520closes%2520the%2520modal%250A%2520%2520let%2520span%2520%253D%2520document.getElementById%28%2522close%2522%29%253B%250A%250A%2520%2520%252F%252F%2520When%2520the%2520user%2520clicks%2520on%2520%253Cspan%253E%2520%28x%29%252C%2520close%2520the%2520modal%250A%2520%2520span.onclick%2520%253D%2520function%2520%28%29%2520%257B%250A%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%257D%253B%250A%250A%2520%2520%252F%252F%2520When%2520the%2520user%2520clicks%2520anywhere%2520outside%2520of%2520the%2520modal%252C%2520close%2520it%250A%2520%2520window.onclick%2520%253D%2520function%2520%28event%29%2520%257B%250A%2520%2520%2520%2520if%2520%28event.target%2520%253D%253D%2520modal%29%2520%257B%250A%2520%2520%2520%2520%2520%2520modal.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%257D%250A%2520%2520%257D%253B%250A%257D%250A"
+							style="width: 100%; height: 330px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+
+						<hr class="w-80 mb-2"/>
+					</div>
+				</div>
+			</section>
+
+			<!--Typography -->
+			<section id="typography">
+				<h2 class="flex-row flex-center font-regular m-2">Typography</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>Text utilities</p>
+				</div>
+				<div class="flex-col flex-center text-center p-2 w-80 m-auto rounded-sm bg-light-gray">
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+					<p>Paragraph text</p>
+					<small>Small text</small>
+					<p class="gray">Grey text</p>
+					<p class="text-left">left text</p>
+					<p class="text-center">center text</p>
+					<p class="text-right">right text</p>
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=640.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E%250A%253Cp%253EParagraph%2520text%253C%252Fp%253E%250A%253Csmall%253ESmall%2520text%253C%252Fsmall%253E%250A%253Cp%2520class%253D%2522gray%2522%253EGrey%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-left%2522%253Eleft%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-center%2522%253Ecenter%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522text-right%2522%253Eright%2520text%253C%252Fp%253E"
+							style="width: 100%; height: 230px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+					
+						<hr class="w-80 mb-2"/>
+					</div>
+				</div>
+			</section>
+
+			<!--Rating -->
+			<section id="rating">
+				<h2 class="flex-row flex-center font-regular m-2">Rating</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>Ratings provide insight regarding others' opinions and experiences, and can allow the user to submit a rating of their own. </p>
+				</div>
+				<div class="flex-col flex-center text-center p-2 w-80 m-auto rounded-sm bg-light-gray">
+					<span class="material-icons rated">star</span>
+					<span class="material-icons rated">star</span>
+					<span class="material-icons rated">star</span>
+					<span class="material-icons">star</span>
+					<span class="material-icons">star</span>
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=640.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522material-icons%2520rated%2522%253Estar%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522material-icons%2520rated%2522%253Estar%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522material-icons%2520rated%2522%253Estar%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522material-icons%2522%253Estar%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522material-icons%2522%253Estar%253C%252Fspan%253E"
+							style="width: 100%; height: 130px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+						<hr class="w-80 mb-2"/>
+					</div>
+				</div>
+			</section>
+
+			<!--Lists -->
+			<section id="lists">
+				<h2 class="flex-row flex-center font-regular m-2">Lists</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>Lists are continuous, vertical indexes of text.</p>
+					<p>They are composed of items containing primary and supplemental actions, which are represented by icons and text. </p>
+				</div>
+				<div class="flex-col flex-center  p-2 w-80 m-auto rounded-sm bg-light-gray">
+					<ul class="w-fit m-auto mb-2">
+						<li class="p-1 border-b-1 ">First item</li>
+						<li class="p-1 border-b-1 ">Second item</li>
+						<li class="p-1 border-b-1 ">Third item</li>
+					</ul>      
+					
+					<ul class="w-fit m-auto mb-2">
+						<li class="p-1 border-b-1 ">
+							<div class="w-100 flex-row items-center">
+								<img
+									class="avatar-md rounded-full object-fit-cover m-1"
+									src="./assets/avatar1.png"
+									alt="John Doe"
+								/>
+								<div>
+									<p class="font-semibold">John Doe</p>
+									<p class="dark-gray">john.doe@fastcss.com</p>
+								</div>
+							</div>
+						</li>
+						<li class="p-1 border-b-1 ">
+							<div class="w-100 flex-row items-center">
+								<img
+									class="avatar-md rounded-full object-fit-cover m-1"
+									src="./assets/avatar2.png"
+									alt="John Doe"
+								/>
+								<div>
+									<p class="font-semibold">John Doe</p>
+									<p class="dark-gray">john.doe@fastcss.com</p>
+								</div>
+							</div>
+						</li>
+					</ul> 
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=640.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522w-fit%2520m-auto%2520mb-2%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522p-1%2520border-b-1%2520%2522%253EFirst%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522p-1%2520border-b-1%2520%2522%253ESecond%2520item%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522p-1%2520border-b-1%2520%2522%253EThird%2520item%253C%252Fli%253E%250A%253C%252Ful%253E%2520%2520"
+							style="width: 100%; height: 130px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=640.25&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522w-fit%2520m-auto%2520mb-2%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522p-1%2520border-b-1%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522w-100%2520flex-row%2520items-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-md%2520rounded-full%2520object-fit-cover%2520m-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Favatar1.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522John%2520Doe%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-semibold%2522%253EJohn%2520Doe%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dark-gray%2522%253Ejohn.doe%2540fastcss.com%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522p-1%2520border-b-1%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522w-100%2520flex-row%2520items-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-md%2520rounded-full%2520object-fit-cover%2520m-1%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Favatar2.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522John%2520Doe%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-semibold%2522%253EJohn%2520Doe%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dark-gray%2522%253Ejohn.doe%2540fastcss.com%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E%2520"
+							style="width: 100%; height: 480px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+						<hr class="w-80 mb-2"/>
+
+					</div>
+				</div>
+			</section>
+
+			<!--Navigation -->
+			<section id="navigation">
+				<h2 class="flex-row flex-center font-regular m-2">Navigation</h2>
+				<div class="flex flex-column flex-center my-4">
+					<p>Navigation displays information and actions relating to the current screen. </p>
+					<p>It content and actions related to the current screen. It's used for branding, screen titles, navigation, and actions.</p>
+				</div>
+				<div class="flex-col flex-center text-center p-2 w-80 m-auto rounded-sm bg-light-gray">
+					<div class="w-100 h-4 bg-blue flex-row items-center white">
+						<span class="material-icons pointer p-1">menu</span> 
+						<p>LOGO</p>
+						<img
+							class="avatar-xs rounded-full object-fit-cover ml-auto mr-1 pointer" 
+							src="./assets/avatar3.png"
+							alt="John Doe"
+						/>
+					</div>
+				</div>
+					<div class="flex-column flex-center">
+						<iframe
+							class="m-2 h-100"
+							src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=boxy&l=htmlmixed&width=673.75&ds=true&dsyoff=20px&dsblur=68px&wc=false&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=12px&lh=115%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522w-100%2520h-4%2520bg-blue%2520flex-row%2520items-center%2520white%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons%2520pointer%2520p-1%2522%253Emenu%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%253Cp%253ELOGO%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-xs%2520rounded-full%2520object-fit-cover%2520ml-auto%2520mr-1%2520pointer%2522%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522.%252Fassets%252Favatar3.png%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522John%2520Doe%2522%250A%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+							style="width: 100%; height: 190px; border:0; transform: scale(1); overflow:hidden; margin-left: auto; margin-right: auto;"
+							sandbox="allow-scripts allow-same-origin">
+						</iframe>
+						<hr class="w-80 mb-2"/>
+					</div>
 				</div>
 			</section>
 		</main>

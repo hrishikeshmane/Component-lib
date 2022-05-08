@@ -27,3 +27,7 @@ https://fastcss.netlify.app/
 - Cards
 - Image
 - Input
+- Grid
+- Slider
+- Toast
+- Modal
