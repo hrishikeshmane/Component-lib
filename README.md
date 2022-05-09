@@ -10,6 +10,14 @@ https://fastcss.netlify.app/
     And open the index.html file in browser
 ```
 
+## To use in projects:
+
+```
+    <link rel="stylesheet" href="https://fastcss.netlify.app/fast.css" />
+
+    add the above tag inside the head tag.
+```
+
 ## Components:
 
 - Avatar
